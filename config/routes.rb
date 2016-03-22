@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   
   root 'pages#home'
   get'about' => 'pages#about'
+  
+  resources :articles
   #get 'pages/home' => 'pages#home'
   #get 'pages/about' => 'pages#about'
 
