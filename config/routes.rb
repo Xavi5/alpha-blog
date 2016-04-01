@@ -12,6 +12,11 @@ Rails.application.routes.draw do
   get'about' => 'pages#about'
   
   resources :articles
+  
+  get 'signup' => 'users#new'
+  #post 'users' => 'users#create'
+  resources :users, except: [:new]
+  
   #get 'pages/home' => 'pages#home'
   #get 'pages/about' => 'pages#about'
 
